@@ -1,0 +1,58 @@
+[build]
+  publish = "."
+
+# Optimal headers for WebGL 3D models and fonts
+[[headers]]
+  for = "/model/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sticker_img/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/work/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Seamless subpage routing
+[[redirects]]
+  from = "/reunimos"
+  to = "/reunimos/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/inspire_mono"
+  to = "/inspire_mono/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/wasm_design_utils"
+  to = "/wasm_design_utils/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/adrive"
+  to = "/adrive/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/shore_icon"
+  to = "/shore_icon/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/teambition"
+  to = "/teambition/index.html"
+  status = 200
